@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%; /* Menetapkan tinggi halaman agar bisa mengisi seluruh viewport */
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/image/Home (1).png");
+    background-size:auto; /* Mengatur ukuran gambar latar belakang agar menutupi seluruh area yang tersedia */
+    background-position: center; /* Menempatkan gambar latar belakang di tengah-tengah halaman */
+    background-repeat: no-repeat; /* Mencegah gambar latar belakang diulang */
+}
+
+
+.awal {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.smansa {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.judul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 17px;
+    text-shadow: 7px 8px 2px #060606;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    
+}
+
+.karosel {
+    width: 50%;
+    height: 50%;
+}
+
+.utama {
+    margin-left: 58px;
+    color: #fff;
+}
+
+.baten {
+    width: 185px;
+    padding: 11px;
+    border-radius: 11px;
+    font-size: 16px;
+    border: none;
+    color: black;
+    background-color: #fff10c;
+    font-weight: 800;
+}
+
+.imej1 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 70px;
+}
+.imej2 {
+    font-family: Inter;
+    font-size: 70px;
+}
+.imej3 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+footer {
+    background-color: #081235;
+    /* Warna latar belakang yang diinginkan */
+    padding: 20px 0;
+    /* Jarak antara isi footer dengan tepi footer */
+    margin-top: 105px;
+}
+
+.containerr {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.identitas {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    margin-left: 10px;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.profil a {
+  text-decoration: none;
+  color: white;
+}
+
+.soss {
+    display: flex;
+    flex-direction: row;
+}
+
+.about:hover {
+    color: #7088de;
+    cursor: pointer;
+}
+
+.contact:hover {
+    color: #7088de;
+    cursor: pointer;
+}
+
+.profil1 {
+    margin-right: 60px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.supp:hover{
+    cursor: pointer;
+    color: #7088de;
+}
+
+.ikon:hover {
+    cursor: pointer;
+    color: #7088de;
+}
+
+.about {
+    margin-top: 10px;
+}
+
+@media (min-width: 375px) and (max-width : 884px) {
+    .container,.carousel {
+        display: flex;
+        flex-direction: column;
+        margin-right: 35px;
+        
+    }
+    .imej1, .imej2, .imej3 {
+        font-size: 31px;
+        margin-right: 54px;
+        margin-top: 17px;
+    }
+
+    .imejKarosel {
+        width: 175px;
+        height: 360px;
+    }
+
+    .awal {
+        margin-left: 10px;
+    }
+
+    .baten {
+        margin-top: 11px;
+    }
+
+    footer {
+        width: 400px;
+        margin-top: 1px;
+    }
+}
